@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="icon" href="img/favicon.ico" mce_href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" mce_href="imfgfavicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>StreetWeather</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/button.css" rel="stylesheet" type="text/css">
+    <link href="css/map.css" rel="stylesheet" type="text/css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+<body>
+    <div class="row container">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="alert-danger">
+                </div>
+                <div class="col-xs-12">
+                    <div id="map"></div>
+                </div>
+                <div class="col-xs-5">
+                    <div id="street-view"></div>
+                    <div id="weather">
+                        <div id="city" class="weather"></div>
+                        <div id="temperature" class="weather"></div>
+                        <div class="weather">
+                            <a class="button button-pill button-tiny" onclick="javascript:return changeforamat('C');">C</a>
+                            <a class="button button-pill button-tiny" onclick="javascript:return changeforamat('F');">F</a>
+                        </div>
+                        <div id="description" class="weather"></div>
+                        <div class="row weather">
+                            <div id="weather-item humidity" class="col-lg-4">Humidity: <span id="humidity"></span>%</div>
+                            <div class="weather-item wind" class="col-lg-6">Wind: <span id="wind-direction"></span> <span id="wind"></span><span id="speed-unit"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+</body>
+</html>
